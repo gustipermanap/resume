@@ -42,8 +42,30 @@ async function loadExternalScripts() {
 async function bootstrap() {
   await includePartials();
   await loadExternalScripts();
+  setupWhatsAppForm();
   document.dispatchEvent(new Event('DOMContentLoaded'));
   window.dispatchEvent(new Event('load'));
 }
 
 bootstrap();
+
+function setupWhatsAppForm() {
+  const form = document.querySelector('.js-whatsapp-form');
+  if (!form) {
+    return;
+  }
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const name = form.querySelector('[name="name"]').value.trim();
+    const email = form.querySelector('[name="email"]').value.trim();
+    const message = form.querySelector('[name="message"]').value.trim();
+
+    const phoneNumber = '6282116040700';
+    const text = encodeURIComponent(
+      `Halo Gusti, saya ${name || 'someone'}.\nEmail: ${email || '-'}\nPesan: ${message || '-'}`
+    );
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+    window.open(whatsappUrl, '_blank');
+  });
+}
