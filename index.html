@@ -1,46 +1,113 @@
 <!DOCTYPE html>
-<html class="no-js vlt-is--homepage vlt-is--footer-fixed" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Gusti Permana Putra</title>
-    <meta name="description" content="Full-Stack Developer specializing in Django, ReactJS, Flutter, Kotlin, and IoT solutions for remote product teams.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--Favicon-->
-    <link rel="icon" type="image/svg" href="assets/vendor/gusti/img/root/favicon.svg">
-    <!--Framework-->
-    <link rel="stylesheet" href="assets/vendor/gusti/css/framework/bootstrap.min.css">
-    <!--Fonts-->
-    <link rel="stylesheet" href="assets/vendor/gusti/fonts/Gilroy/style.css">
-    <!--Icons-->
-    <link rel="stylesheet" href="assets/fonts/LineIcons/Pro-Regular/font-css/LineIcons.css">
-    <!--Plugins-->
-    <link rel="stylesheet" href="assets/vendor/gusti/css/vlt-plugins.min.css">
-    <!--Style-->
-    <link rel="stylesheet" href="assets/vendor/gusti/css/vlt-main.min.css">
-    <!--Custom-->
-    <link rel="stylesheet" href="assets/vendor/gusti/css/custom.css">
-    <!--Local overrides-->
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body class="animsition">
-    <div data-include="partials/header.html"></div>
-    <!--Main-->
-    <main class="vlt-main">
-      <!--Fullpage Slider-->
-      <div class="vlt-fullpage-slider" data-loop-top="" data-loop-bottom="" data-speed="450">
-        <div data-include="partials/home.html"></div>
-        <div data-include="partials/about.html"></div>
-        <div data-include="partials/skills.html"></div>
-        <div data-include="partials/projects.html"></div>
-        <div data-include="partials/experience.html"></div>
-        <div data-include="partials/contact.html"></div>
-        <!--Progress Bar-->
-        <div class="vlt-fullpage-slider-progress-bar"><span></span></div>
-      </div>
-    </main>
-    <div data-include="partials/footer.html"></div>
-    <!--Libs (loaded after partials)-->
-    <script type="module" src="js/includes.js"></script>
-  </body>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusti Permana Putra | Polymath</title>
+    <!-- Tailwind CSS via CDN untuk MVP Cepat -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',    // Slate 900
+                            light: '#f8fafc',   // Slate 50
+                            accent: '#d97706'   // Amber 600 (Aksen elegan Jazz)
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-brand-light font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- HERO SECTION -->
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-6 border-b border-slate-800">
+        <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4">
+            Gusti Permana <span class="text-brand-accent">Putra</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-400 mb-8 max-w-2xl mx-auto">
+            Polymath. Software Architect. Jazz Musician. Content Creator.
+        </p>
+        <p class="text-md text-slate-500 max-w-xl mx-auto mb-10">
+            Sintesis antara logika sistem terdistribusi, improvisasi musik bebop, dan manajemen pengetahuan.
+        </p>
+        <div class="flex gap-4">
+            <a href="#contact" class="bg-brand-accent hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+                Mulai Kolaborasi
+            </a>
+            <a href="#domains" class="border border-slate-600 hover:border-slate-400 text-slate-300 font-semibold py-3 px-6 rounded-lg transition-colors">
+                Jelajahi Profil
+            </a>
+        </div>
+    </header>
+
+    <!-- DOMAINS SECTION -->
+    <section id="domains" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Domain 1: Engineering -->
+            <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-brand-accent transition-colors">
+                <div class="text-brand-accent text-3xl mb-4">⚙️</div>
+                <h3 class="text-2xl font-bold mb-3">System Architect & IoT</h3>
+                <p class="text-slate-400 mb-6 line-clamp-3">
+                    Merancang arsitektur backend berkinerja tinggi, infrastruktur Docker, hingga integrasi perangkat keras industri (ESP32/PLC) untuk efisiensi operasional B2B.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">Django</span>
+                    <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">Docker</span>
+                    <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">IoT</span>
+                </div>
+            </div>
+
+            <!-- Domain 2: Music -->
+            <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-brand-accent transition-colors">
+                <div class="text-brand-accent text-3xl mb-4">🎸</div>
+                <h3 class="text-2xl font-bold mb-3">Jazz Musician</h3>
+                <p class="text-slate-400 mb-6 line-clamp-3">
+                    Vokalis baritone spesialis crooner ballads dan gitaris archtop solo dengan fokus pada bebop. Tersedia untuk gig, event, dan kolaborasi produksi audio.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">Baritone</span>
+                    <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">Bebop</span>
+                    <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">Ardour</span>
+                </div>
+            </div>
+
+            <!-- Domain 3: Content & Teaching -->
+            <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-brand-accent transition-colors">
+                <div class="text-brand-accent text-3xl mb-4">🧠</div>
+                <h3 class="text-2xl font-bold mb-3">Content & Mentoring</h3>
+                <p class="text-slate-400 mb-6 line-clamp-3">
+                    Edukator teknologi berbasis kerangka "Second Brain". Fokus pada penyampaian prinsip Clean Code, SOLID, dan dokumentasi arsitektur "Show Your Work".
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">Tech Writer</span>
+                    <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">Mentor</span>
+                    <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">CODE</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT / CTA SECTION -->
+    <section id="contact" class="py-24 px-6 bg-slate-900 border-t border-slate-800 text-center">
+        <h2 class="text-4xl font-bold mb-6">Mari Berdiskusi</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto mb-10">
+            Baik untuk konsultasi arsitektur enterprise, kebutuhan pengisi acara jazz, maupun kolaborasi pengembangan teknologi.
+        </p>
+        <a href="mailto:email@anda.com" class="inline-block bg-brand-accent hover:bg-amber-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition-colors">
+            Hubungi Saya
+        </a>
+    </section>
+
+    <footer class="py-8 text-center text-slate-600 text-sm border-t border-slate-800">
+        &copy; 2026 Gusti Permana Putra. Built with KISS Principle.
+    </footer>
+
+</body>
 </html>

@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "name": "Gusti Permana Putra",
+    "tagline": "Polymath: Software Architect | Content Creator | Jazz Musician",
+    "mission": "Membangun sistem enterprise yang efisien, berbagi pengetahuan teknis, dan menghidupkan harmoni musik jazz."
+  },
+  "domains": [
+    {
+      "id": "engineering",
+      "title": "Software Engineering & IoT",
+      "focus": "B2B Efficiency, System Architecture, Hardware Integration",
+      "tech_stack": ["Django", "FastAPI", "Angular", "Flutter", "Docker", "ESP32", "PLC"],
+      "target": "Klien Bisnis & Perekrut Tech"
+    },
+    {
+      "id": "music",
+      "title": "Jazz Performance & Audio",
+      "focus": "Baritone/Crooner Vocals, Archtop Guitar (Bebop), Audio Engineering",
+      "tech_stack": ["Vocals", "Solo Guitar", "Ardour", "Live Looping"],
+      "target": "Event Organizers & Kolaborator Musik"
+    },
+    {
+      "id": "content",
+      "title": "Knowledge Management & Teaching",
+      "focus": "Second Brain (CODE), Clean Code Advocacy, Mentoring",
+      "tech_stack": ["Technical Writing", "Workshops", "System Design Mentorship"],
+      "target": "Pengajar & Rekan Engineer"
+    }
+  ]
+}
