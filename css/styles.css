@@ -32,8 +32,18 @@ body address {
   color: var(--accent-color);
 }
 
-.vlt-navbar--transparent .vlt-navbar-inner {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+.vlt-header,
+.vlt-navbar,
+.vlt-navbar-inner,
+.vlt-navbar-background,
+.vlt-navbar.vlt-navbar--transparent .vlt-navbar-inner {
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.vlt-navbar-background {
+  background-color: transparent !important;
 }
 
 .vlt-offcanvas-menu {
@@ -71,6 +81,11 @@ body address {
 
 .vlt-testimonial__text {
   color: var(--text-light);
+}
+
+.vlt-footer {
+  padding-top: 0.8rem !important;
+  padding-bottom: 0.8rem !important;
 }
 
 .vlt-footer--default {
@@ -180,4 +195,48 @@ body address {
   height: 20px;
   object-fit: contain;
   filter: invert(1);
+}
+
+.vlt-marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.vlt-marquee::before,
+.vlt-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+}
+.vlt-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, var(--background-dark), transparent);
+}
+.vlt-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, var(--background-dark), transparent);
+}
+.vlt-marquee-inner {
+  display: inline-flex;
+  animation: marqueeScroll 20s linear infinite;
+  align-items: center;
+}
+.vlt-marquee-inner img {
+  height: 60px;
+  margin: 0 40px;
+  filter: grayscale(100%) opacity(70%);
+  transition: filter 0.3s ease;
+}
+.vlt-marquee-inner img:hover {
+  filter: grayscale(0%) opacity(100%);
+}
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }

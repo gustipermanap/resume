@@ -15,13 +15,13 @@ const translations = {
     'nav.contact': 'Contact',
     'home.tagline': 'Remote-first Full-Stack Developer',
     'home.summary':
-      'I build scalable, user-focused platforms with Django, ReactJS, Flutter, Kotlin, and IoT stacks. With 9 years of remote experience, I design resilient backends, refined frontends, and connected products that keep teams shipping fast.',
+      'I build scalable, user-focused platforms with Django, ReactJS, Flutter, Kotlin, and IoT stacks. With {years} years of remote experience, I design resilient backends, refined frontends, and connected products that keep teams shipping fast.',
     'home.buttonGithub': 'View GitHub',
     'home.buttonProject': 'Discuss a Project',
     'about.experienceTitle': 'Years<br>Experience<br>Working',
     'about.heading': 'About Me',
     'about.description':
-      'I am a Full-Stack Developer who blends Django, ReactJS, Flutter, Kotlin, and IoT expertise to deliver platforms that stay fast under scale. Over the past 9 years I have led remote deliveries for e-commerce, automation, and product teams, translating user journeys into well-instrumented systems. I enjoy pairing backend rigor with polished UI flows, keeping APIs observable and frontends accessible. Remote collaboration, async communication, and clear documentation anchor every engagement.',
+      'I am a Full-Stack Developer who blends Django, ReactJS, Flutter, Kotlin, and IoT expertise to deliver platforms that stay fast under scale. Over the past {years} years I have led remote deliveries for e-commerce, automation, and product teams, translating user journeys into well-instrumented systems. I enjoy pairing backend rigor with polished UI flows, keeping APIs observable and frontends accessible. Remote collaboration, async communication, and clear documentation anchor every engagement.',
     'about.meta.focus': '<strong>Focus:</strong> API development, automation, IoT orchestration',
     'about.meta.availability': '<strong>Availability:</strong> Open for remote collaboration and freelance projects',
     'about.progress.fullStack': 'Full-Stack Development',
@@ -62,6 +62,16 @@ const translations = {
     'projects.mobile.description':
       'A feature-rich mobile experience with live API updates, push notifications, offline-ready caching, and Kotlin extensions for Android-specific flows.',
     'projects.mobile.button': 'View Project',
+    'projects.resident.title': 'Resident System',
+    'projects.resident.meta': 'Platform: Web',
+    'projects.resident.description':
+      'A comprehensive web platform for Pondok Safari Indah, designed to streamline resident management and community engagement.',
+    'projects.resident.button': 'View Project',
+    'projects.gunnebo.title': 'Gunnebo IoT Display',
+    'projects.gunnebo.meta': 'Stack: IoT, Web',
+    'projects.gunnebo.description':
+      'An interactive IoT system designed for Gunnebo to display their products dynamically to customers, enhancing the retail experience.',
+    'projects.gunnebo.button': 'View Project',
     'experience.heading': 'Experience',
     'experience.summary':
       'Delivering full-stack products end-to-end, from API design and automation to polished UI and IoT deployments.',
@@ -79,6 +89,9 @@ const translations = {
       'Improved API performance and data throughput by refactoring query layers and adding Redis-backed caching.',
     'experience.startup.bullet2':
       'Instrumented monitoring, deployment automation, and code reviews that set the foundation for future releases.',
+    'clients.heading': 'Clients & Partners',
+    'clients.summary':
+      'I have had the privilege to work with amazing organizations including ministries and state-owned enterprises.',
     'contact.heading': 'Contact',
     'contact.summary':
       'I collaborate remotely with teams across time zones to turn product briefs into shipped software. Share a challenge, and I will respond with a clear plan, timeline, and technical approach.',
@@ -103,13 +116,13 @@ const translations = {
     'nav.contact': 'Kontak',
     'home.tagline': 'Pengembang Full-Stack yang mengutamakan kerja jarak jauh',
     'home.summary':
-      'Saya membangun platform terukur dan berfokus pada pengguna dengan Django, ReactJS, Flutter, Kotlin, dan tumpukan IoT. Dengan 9 tahun pengalaman remote, saya merancang backend tangguh, frontend rapi, dan produk terhubung yang menjaga tim tetap cepat mengirimkan produk.',
+      'Saya membangun platform terukur dan berfokus pada pengguna dengan Django, ReactJS, Flutter, Kotlin, dan tumpukan IoT. Dengan {years} tahun pengalaman remote, saya merancang backend tangguh, frontend rapi, dan produk terhubung yang menjaga tim tetap cepat mengirimkan produk.',
     'home.buttonGithub': 'Lihat GitHub',
     'home.buttonProject': 'Diskusikan Proyek',
     'about.experienceTitle': 'Tahun<br>Pengalaman<br>Bekerja',
     'about.heading': 'Tentang Saya',
     'about.description':
-      'Saya adalah Full-Stack Developer yang memadukan keahlian Django, ReactJS, Flutter, Kotlin, dan IoT untuk menghadirkan platform yang tetap gesit saat skala membesar. Selama 9 tahun terakhir saya memimpin pengiriman remote untuk tim e-commerce, otomasi, dan produk, menerjemahkan perjalanan pengguna menjadi sistem yang terinstrumentasi baik. Saya menikmati menggabungkan ketelitian backend dengan alur UI yang halus, menjaga API tetap terpantau dan frontend mudah diakses. Kolaborasi jarak jauh, komunikasi asinkron, dan dokumentasi jelas selalu menjadi fondasinya.',
+      'Saya adalah Full-Stack Developer yang memadukan keahlian Django, ReactJS, Flutter, Kotlin, dan IoT untuk menghadirkan platform yang tetap gesit saat skala membesar. Selama {years} tahun terakhir saya memimpin pengiriman remote untuk tim e-commerce, otomasi, dan produk, menerjemahkan perjalanan pengguna menjadi sistem yang terinstrumentasi baik. Saya menikmati menggabungkan ketelitian backend dengan alur UI yang halus, menjaga API tetap terpantau dan frontend mudah diakses. Kolaborasi jarak jauh, komunikasi asinkron, dan dokumentasi jelas selalu menjadi fondasinya.',
     'about.meta.focus': '<strong>Fokus:</strong> Pengembangan API, otomasi, orkestrasi IoT',
     'about.meta.availability': '<strong>Ketersediaan:</strong> Terbuka untuk kolaborasi remote dan proyek lepas',
     'about.progress.fullStack': 'Pengembangan Full-Stack',
@@ -157,6 +170,16 @@ const translations = {
     'projects.mobile.description':
       'Pengalaman mobile kaya fitur dengan pembaruan API langsung, notifikasi push, cache siap offline, dan ekstensi Kotlin untuk alur Android.',
     'projects.mobile.button': 'Lihat Proyek',
+    'projects.resident.title': 'Sistem Residen (Resident System)',
+    'projects.resident.meta': 'Platform: Web',
+    'projects.resident.description':
+      'Platform web komprehensif untuk Pondok Safari Indah, dirancang untuk mempermudah manajemen warga dan interaksi komunitas.',
+    'projects.resident.button': 'Lihat Proyek',
+    'projects.gunnebo.title': 'Gunnebo IoT Display',
+    'projects.gunnebo.meta': 'Teknologi: IoT, Web',
+    'projects.gunnebo.description':
+      'Sistem IoT interaktif yang dirancang untuk Gunnebo dalam menampilkan produk mereka secara dinamis kepada pelanggan, meningkatkan pengalaman ritel.',
+    'projects.gunnebo.button': 'Lihat Proyek',
     'experience.heading': 'Pengalaman',
     'experience.summary':
       'Mengirimkan produk full-stack end-to-end, dari desain API dan otomasi hingga UI yang rapi dan implementasi IoT.',
@@ -174,6 +197,9 @@ const translations = {
       'Meningkatkan performa API dan throughput data lewat refactor layer query dan cache berbasis Redis.',
     'experience.startup.bullet2':
       'Membangun monitoring, otomasi deployment, dan code review yang menjadi dasar rilis berikutnya.',
+    'clients.heading': 'Klien & Mitra',
+    'clients.summary':
+      'Saya merasa bangga telah dipercaya untuk bekerja sama dengan berbagai organisasi luar biasa, termasuk kementerian dan Badan Usaha Milik Negara (BUMN).',
     'contact.heading': 'Kontak',
     'contact.summary':
       'Saya berkolaborasi secara remote lintas zona waktu untuk mengubah brief produk menjadi perangkat lunak siap pakai. Bagikan tantangannya, dan saya akan merespons dengan rencana, lini masa, serta pendekatan teknis yang jelas.',
@@ -198,13 +224,13 @@ const translations = {
     'nav.contact': 'お問い合わせ',
     'home.tagline': 'リモート主体のフルスタック開発者',
     'home.summary':
-      '私は Django、ReactJS、Flutter、Kotlin、IoT スタックを組み合わせ、スケーラブルでユーザー中心のプラットフォームを構築しています。リモートでの9年の経験を通じて、堅牢なバックエンド、洗練されたフロントエンド、そしてチームの開発速度を落とさない接続プロダクトを設計してきました。',
+      '私は Django、ReactJS、Flutter、Kotlin、IoT スタックを組み合わせ、スケーラブルでユーザー中心のプラットフォームを構築しています。リモートでの{years}年の経験を通じて、堅牢なバックエンド、洗練されたフロントエンド、そしてチームの開発速度を落とさない接続プロダクトを設計してきました。',
     'home.buttonGithub': 'GitHub を見る',
     'home.buttonProject': 'プロジェクトを相談する',
     'about.experienceTitle': '年<br>の実務<br>経験',
     'about.heading': '自己紹介',
     'about.description':
-      '私は Django・ReactJS・Flutter・Kotlin・IoT の専門性を組み合わせ、スケールしても高速に動作するプラットフォームを提供するフルスタック開発者です。過去9年間で、EC、オートメーション、プロダクトチーム向けにリモートでの開発をリードし、ユーザージャーニーを計測しやすいシステムへと落とし込んできました。バックエンドの堅牢さと磨き上げた UI フローを組み合わせ、API の可観測性とフロントエンドのアクセシビリティを両立させることを大切にしています。リモートでの協働、非同期コミュニケーション、明確なドキュメントが常に基盤です。',
+      '私は Django・ReactJS・Flutter・Kotlin・IoT の専門性を組み合わせ、スケールしても高速に動作するプラットフォームを提供するフルスタック開発者です。過去{years}年間で、EC、オートメーション、プロダクトチーム向けにリモートでの開発をリードし、ユーザージャーニーを計測しやすいシステムへと落とし込んできました。バックエンドの堅牢さと磨き上げた UI フローを組み合わせ、API の可観測性とフロントエンドのアクセシビリティを両立させることを大切にしています。リモートでの協働、非同期コミュニケーション、明確なドキュメントが常に基盤です。',
     'about.meta.focus': '<strong>注力分野:</strong> API 開発、オートメーション、IoT オーケストレーション',
     'about.meta.availability': '<strong>稼働状況:</strong> リモート協業・フリーランス案件に対応可能',
     'about.progress.fullStack': 'フルスタック開発',
@@ -252,6 +278,16 @@ const translations = {
     'projects.mobile.description':
       'ライブ API 更新、プッシュ通知、オフライン対応キャッシュ、Android 向け Kotlin 拡張を備えた多機能モバイル体験です。',
     'projects.mobile.button': 'プロジェクトを見る',
+    'projects.resident.title': '居住者システム (Resident System)',
+    'projects.resident.meta': 'プラットフォーム: Web',
+    'projects.resident.description':
+      'Pondok Safari Indah 向けの包括的な Web プラットフォーム。居住者管理とコミュニティの連携を効率化するために設計されました。',
+    'projects.resident.button': 'プロジェクトを見る',
+    'projects.gunnebo.title': 'Gunnebo IoT ディスプレイ',
+    'projects.gunnebo.meta': '技術: IoT, Web',
+    'projects.gunnebo.description':
+      'Gunnebo 向けに設計されたインタラクティブな IoT システム。顧客に対して動的に製品を展示し、小売体験を向上させます。',
+    'projects.gunnebo.button': 'プロジェクトを見る',
     'experience.heading': '経験',
     'experience.summary':
       'API 設計とオートメーションから UI・IoT 配備まで、フルスタック製品をエンドツーエンドで届けています。',
@@ -269,6 +305,9 @@ const translations = {
       'クエリ層のリファクタと Redis キャッシュで API 性能とスループットを向上。',
     'experience.startup.bullet2':
       '監視・デプロイ自動化・コードレビューを整備し、将来のリリース基盤を構築。',
+    'clients.heading': 'クライアント・パートナー',
+    'clients.summary':
+      '省庁や国有企業など、数々の素晴らしい組織と協働する機会に恵まれました。',
     'contact.heading': 'お問い合わせ',
     'contact.summary':
       '私はタイムゾーンを越えてリモートで協働し、プロダクトブリーフを出荷可能なソフトウェアへと具現化します。課題を共有していただければ、明確な計画・タイムライン・技術アプローチで回答します。',
@@ -329,6 +368,14 @@ async function bootstrap() {
   initI18n();
   await loadExternalScripts();
   setupWhatsAppForm();
+
+  // Calculate dynamic years of experience from 2015
+  const expElement = document.getElementById('dynamic-years-experience');
+  if (expElement) {
+    const currentYear = new Date().getFullYear();
+    expElement.textContent = currentYear - 2015;
+  }
+
   document.dispatchEvent(new Event('DOMContentLoaded'));
   window.dispatchEvent(new Event('load'));
 }
@@ -361,12 +408,16 @@ function applyLanguage(lang) {
   document.documentElement.setAttribute('lang', locale);
 
   const elements = document.querySelectorAll('[data-i18n]');
+  const currentYears = new Date().getFullYear() - 2015;
+
   elements.forEach((element) => {
     const key = element.getAttribute('data-i18n');
-    const translation = dictionary[key];
+    let translation = dictionary[key];
     if (!translation) {
       return;
     }
+
+    translation = translation.replace(/\{years\}/g, currentYears);
     const attrTarget = element.getAttribute('data-i18n-attr');
     if (attrTarget) {
       attrTarget.split(',').forEach((attr) => {
